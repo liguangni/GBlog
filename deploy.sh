@@ -27,7 +27,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
 else
   # 自动部署
   msg='来自github actions的自动部署'
-  githubUrl=https://${GITHUB_TOKEN}@github.com:liguangni/GBlog.git
+  githubUrl=git@github.com:liguangni/GBlog.git
   git config --global user.name "liguangni"
   git config --global user.email "liguangfenglucky@163.com"
 fi
