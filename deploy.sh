@@ -26,8 +26,8 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:liguangni/GBlog.git
 else
   # 自动部署
-  msg='来自github actions的自动部署'+${GITHUB_TOKEN}
-  githubUrl=https://${GITHUB_TOKEN}@github.com/liguangni/GBlog.git
+  msg='来自github actions的自动部署'
+  githubUrl=https://liguangni:${GITHUB_TOKEN}@github.com/liguangni/GBlog.git
   git config --global user.name "liguangni"
   git config --global user.email "liguangfenglucky@163.com"
 fi
@@ -44,29 +44,29 @@ rm -rf docs/.vuepress/dist
 
 
 #打包代码同步到 gitee gh-pages分支
-if [ -z "$SSH_PRIVATE_KEY" ]; then
-  echo '如果是空字符串，则不部署到gitee'
-else
-  #url访问目录
-  initDist "module.exports = '/'"
-  # 生成静态文件
-  npm run build
-  # 进入生成的文件夹
-  cd docs/.vuepress/dist
+#if [ -z "$SSH_PRIVATE_KEY" ]; then
+#  echo '如果是空字符串，则不部署到gitee'
+#else
+#  #url访问目录
+#  initDist "module.exports = '/'"
+#  # 生成静态文件
+#  npm run build
+#  # 进入生成的文件夹
+#  cd docs/.vuepress/dist
 
-  giteeUrl=git@gitee.com:oddfar/notes.git  #gitee 仓库ssh地址
+#  giteeUrl=git@gitee.com:oddfar/notes.git  #gitee 仓库ssh地址
   
-  git config --global user.name "oddfar"
-  git config --global user.email "oddfar@163.com"
-  git init
-  git add -A
-  git commit -m "来自github actions的自动部署"
-  git push -f $giteeUrl master:gh-pages
+#  git config --global user.name "oddfar"
+#  git config --global user.email "oddfar@163.com"
+#  git init
+#  git add -A
+#  git commit -m "来自github actions的自动部署"
+#  git push -f $giteeUrl master:gh-pages
   
-  cd - # 退回开始所在目录
-  rm -rf docs/.vuepress/dist
+#  cd - # 退回开始所在目录
+#  rm -rf docs/.vuepress/dist
   # 删除秘钥
-  rm -rf ~/.ssh
-fi
+#  rm -rf ~/.ssh
+#fi
 
 
