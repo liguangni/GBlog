@@ -26,8 +26,8 @@ if [ -z "$GITHUB_TOKEN" ]; then
   githubUrl=git@github.com:liguangni/GBlog.git
 else
   # 自动部署
-  msg='来自github actions的自动部署'
-  githubUrl=git@github.com:liguangni/GBlog.git
+  msg='来自github actions的自动部署'+${GITHUB_TOKEN}
+  githubUrl=https://${GITHUB_TOKEN}@github.com/oddfar/notes.git
   git config --global user.name "liguangni"
   git config --global user.email "liguangfenglucky@163.com"
 fi
