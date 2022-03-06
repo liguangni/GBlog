@@ -32,6 +32,7 @@ jobs: # 工作流
         run: |
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          cat ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
       - name: Push Gitee Mirror  #★★★★★★ 步骤4：推送到gitee★★★★★★
