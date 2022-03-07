@@ -59,6 +59,7 @@ module.exports = [
       }, {
         text: 'Spring', items: [
           { text: 'Spring', link: '/spring/' },
+          { text: 'SpringCloud Alibaba', link: '/springcloudalibaba/' },
         ]
       }
       , {
