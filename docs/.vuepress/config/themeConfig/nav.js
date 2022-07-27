@@ -59,22 +59,11 @@ module.exports = [
       }, {
         text: 'Spring', items: [
           { text: 'Spring', link: '/spring/' },
-          { text: 'SpringCloud Alibaba', link: '/springcloudalibaba/' },
         ]
       }
       , {
         text: '中间件', items: [
           { text: 'RabbitMQ', link: '/rabbitmq/' },
-        ]
-      }
-    ]
-  },
-  {
-    text: '前端',
-    items: [
-      {
-        text: 'VUE', items: [
-          { text: 'Vue', link: '/Vue' }
         ]
       }
     ]
@@ -87,7 +76,7 @@ module.exports = [
       { text: 'Jenkins', link: '/jenkins/' },
     ]
   },
-  {
+    {
     text: '项目',
     items: [
       { text: '校园信息墙', link: '/campus/' },
