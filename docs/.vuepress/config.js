@@ -13,8 +13,8 @@ module.exports = {
   themeConfig,
   base,  //引入后缀
 
-  title: "OddFar's Notes",
-  description: '我们在黑暗中并肩前行，走在各自的朝圣路上!', // 描述,以 <meta> 标签渲染到页面html中
+  title: "GBlog",
+  description: '家穷人丑,一米四九,小学文化,农村户口', // 描述,以 <meta> 标签渲染到页面html中
 
   head: [
     ['link', { rel: 'icon', href: '/img/favicon.ico' }],

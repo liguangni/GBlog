@@ -68,6 +68,17 @@ module.exports = [
         ]
       }
     ]
+  },,
+  {
+    text: '前端',
+    items: [
+      {
+        text: 'VUE', items: [
+          { text: 'Vue2', link: '/Vue2/' },
+          { text: 'Vue3', link: '/Vue3/' },
+        ]
+      }
+    ]
   },
   {
     text: '工具|部署',
