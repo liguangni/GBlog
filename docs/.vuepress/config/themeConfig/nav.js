@@ -74,8 +74,7 @@ module.exports = [
     items: [
       {
         text: 'VUE', items: [
-          { text: 'Vue2', link: '/Vue2/' },
-          { text: 'Vue3', link: '/Vue3/' },
+          { text: 'Vue', link: '/Vue' }
         ]
       }
     ]
