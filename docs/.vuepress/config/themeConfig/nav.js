@@ -69,6 +69,12 @@ module.exports = [
     ]
   },
   {
+    text: '前端',
+    items: [
+      { text: 'Vue', link: 'https://www.baidu.com/' }
+    ]
+  },
+  {
     text: '工具|部署',
     items: [
       { text: 'Git', link: '/git/' },
